@@ -1386,6 +1386,7 @@
     <Content Include="images\images\Thumbs.db" />
     <Content Include="Font\Yach.Master" />
     <Content Include="WebUserControl1.ascx" />
+    <Content Include="說明.txt" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\ckeditor\ckeditor.php" />
     <Content Include="Scripts\ckeditor\ckeditor_basic.js" />
