@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2Login.master.cs" Inherits="Tayana.Back.Site2Login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TtayanaWorld後台登入</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!-- vendor css -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    <form id="form1" runat="server">
+        <!-- [ auth-signin ] start -->
+        <div class="auth-wrapper" style="background: #dfd0d017;">
+            <div class="auth-content text-center">
+                <img src="../images/logo001.gif" alt="" class="img-fluid mb-4">
+                <div class="card borderless">
+                    <div class="row align-items-center ">
+                        <div class="col-md-12">
+                            <div class="card-body">
+                                <h4 class="mb-3 f-w-400">後台登入</h4>
+                                <hr>
+                                <%-- 帳號 --%>
+                                <div class="form-group mb-3">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+                                </div>
+                                <%--密碼--%>
+                                <div class="form-group mb-4">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+                                </div>
+                                <%-- 登入 --%>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server"></asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ auth-signin ] end -->
+    </form>
+</body>
+</html>

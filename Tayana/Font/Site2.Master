@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Tayana.Font.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TtayanaWorld</title>
+    <script type="text/javascript" src="Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.cycle.all.2.74.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slideshow').cycle({
+                fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+            });
+        });
+    </script>
+    <!--[if lt IE 7]>
+<script type="text/javascript" src="javascript/iepngfix_tilebg.js"></script>
+<![endif]-->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/homestyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="contain">
+            <div class="sub">
+                <p><a href="index.aspx">Home</a></p>
+            </div>
+
+            <!--------------------------------選單開始---------------------------------------------------->
+            <div class="menu">
+                <ul>
+                    <li class="menuli01"><a href="Yacht.aspx">
+                        <img src="../images/mmmmeeeee.gif" alt="&quot;&quot;" />Yachts</a></li>
+                    <li class="menuli02"><a href="new_list.aspx">
+                        <img src="../images/mmmmeeeee.gif" alt="&quot;&quot;" />NEWS</a></li>
+                    <li class="menuli03"><a href="company.aspx">
+                        <img src="../images/mmmmeeeee.gif" alt="&quot;&quot;" />COMPANY</a></li>
+                    <li class="menuli04"><a href="dealers.aspx">
+                        <img src="../images/mmmmeeeee.gif" alt="&quot;&quot;" />DEALERS</a></li>
+                    <li class="menuli05"><a href="contact.aspx">
+                        <img src="../images/mmmmeeeee.gif" alt="&quot;&quot;" />CONTACT</a></li>
+                </ul>
+            </div>
+            <!--------------------------------選單開始結束---------------------------------------------------->
+            <!--遮罩-->
+            <div class="bannermasks">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder10" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <!--遮罩結束-->
+            <!--------------------------------換圖開始---------------------------------------------------->
+            <div class="banner">
+                <ul>
+                    <li>
+                        <img src="images/newbanner.jpg" alt="Tayana Yachts" /></li>
+                </ul>
+            </div>
+            <!--------------------------------換圖結束---------------------------------------------------->
+            <div class="conbg">
+                <!--------------------------------左邊選單開始---------------------------------------------------->
+                <div class="left">
+                    <div class="left1">
+                        <p>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder11" runat="server"></asp:ContentPlaceHolder>
+                        </p>
+                        <ul>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder12" runat="server"></asp:ContentPlaceHolder>
+                        </ul>
+                    </div>
+                </div>
+                <!--------------------------------左邊選單結束---------------------------------------------------->
+
+                <!--------------------------------右邊選單開始---------------------------------------------------->
+                <div id="crumb">
+                    <a href="#">Home</a> >> 
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder13" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="right">
+                    <div class="right1">
+                        <div class="title">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder14" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+                        <!--------------------------------內容開始---------------------------------------------------->
+                        <div class="box2_list">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+                            <!--------------------------------下方頁碼---------------------------------------------------->
+                          
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+                        <!--------------------------------內容結束------------------------------------------------------>
+                    </div>
+                </div>
+                <!--------------------------------右邊選單結束---------------------------------------------------->
+            </div>
+            <!--------------------------------落款開始---------------------------------------------------->
+            <div class="footer">
+                <p class="footerp01">© 1973-2011 Tayana Yachts, Inc. All Rights Reserved</p>
+                <div class="footer01">
+                    <span>No. 60, Hai Chien Road, Chung Men Li, Lin Yuan District, Kaohsiung City, Taiwan, R.O.C.</span><br />
+                    <span>TEL：+886(7)641-2721</span> <span>FAX：+886(7)642-3193</span><span><a href="mailto:tayangco@ms15.hinet.net">E-mail：tayangco@ms15.hinet.net</a>.</span>
+                </div>
+            </div>
+            <!--------------------------------落款結束---------------------------------------------------->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+
